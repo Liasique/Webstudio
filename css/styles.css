@@ -249,13 +249,16 @@ img {
 /* -------------------------------------- */
 
 /* ----- START FOOTER ------ */
-.footer {
-    display: flex;
-    align-items: baseline;
-}
+/* .footer { */
+/* display: flex; */
+/* align-items: baseline; */
+/* } */
 
 .footer-container {
-    margin-right: 120px
+    display: flex;
+    margin-right: 120px;
+    gap: 120px;
+
 }
 
 .footer-logo-blue {
@@ -310,8 +313,10 @@ img {
     margin-bottom: 16px;
 }
 
-.footer-social {
-    display: inline-block;
+.footer-social__list {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
 }
 
 .footer-social__item {
@@ -489,6 +494,7 @@ img {
     gap: 24px;
 }
 
+
 .team-item__icon {
     fill: var(--color-cloud);
     padding: 12px;
@@ -507,6 +513,14 @@ img {
 
 .team-name-work {
     padding: 32px 0;
+
+}
+
+.team-social__list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -539,6 +553,7 @@ img {
     line-height: var(--line-height-title-secondary);
     color: var(--color-navy-blue);
     margin-bottom: 72px;
+    text-align: center;
 }
 
 .customers-list {
