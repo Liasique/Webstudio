@@ -332,14 +332,12 @@ img {
     letter-spacing: var(--letter-spacing-primary);
     color: var(--color-navy-blue);
     margin-bottom: 8px;
-
-
+    margin-top: 8px;
 }
 
 .benefits-list {
     display: flex;
     gap: 24px;
-
 }
 
 .benefits-desc {
@@ -352,6 +350,12 @@ img {
 
 .benefits-item {
     width: calc((100% - 72px) / 4);
+}
+
+.benefits-item__icon {
+    padding: 24px 100px;
+    border-radius: 4px;
+    background: var(--cloud, #F4F4FD);
 }
 
 /* ----- end Our benefits__section 2------ */
@@ -402,7 +406,13 @@ img {
 .team-list {
     display: flex;
     gap: 24px;
+}
 
+.team-item__icon {
+    fill: var(--color-cloud);
+    padding: 12px;
+    background-color: var(--color-iris);
+    border-radius: 50%;
 }
 
 .team-item {
