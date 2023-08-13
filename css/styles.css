@@ -176,6 +176,7 @@ img {
     font-size: var(--font-size-regular);
     line-height: var(--line-height-primary);
     color: var(--color-slate);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -197,7 +198,6 @@ img {
     height: 4px;
     background-color: var(--color-ocean);
     border-radius: 2px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .header-contacts {
@@ -220,6 +220,7 @@ img {
     gap: 40px;
     margin-left: auto;
     padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts__link:hover,
@@ -235,6 +236,7 @@ img {
 .header-contacts__list {
     display: flex;
     gap: 40px;
+    /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 
@@ -484,7 +486,7 @@ img {
     padding: 120px 0;
 }
 
-.customer-title {
+.customers-title {
     font-size: var(--font-size-header-2);
     line-height: var(--line-height-title-secondary);
     color: var(--color-navy-blue);
