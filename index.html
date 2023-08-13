@@ -29,7 +29,11 @@
           >
           <ul class="list header-menu">
             <li class="header-menu-item">
-              <a class="link header-menu__link" href="./index.html">Studio</a>
+              <a
+                class="link header-menu__link header__active"
+                href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-menu-item">
               <a class="link header-menu__link" href="./portfolio.html"
@@ -42,7 +46,7 @@
           </ul>
         </nav>
         <address class="header-contacts">
-          <ul class="list header-contacts__list">
+          <ul class="list header-contacts__list header__active">
             <li>
               <a
                 class="link header-contacts__link"
@@ -61,14 +65,16 @@
     </header>
 
     <main>
-      <!--------------------- Hero 1-------------------------->
+      <!--------------------- Hero — section 1-------------------------->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn" type="button">Order Service</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-      <!------------------- Our benefits  2---------------------------->
+      <!------------------- Our benefits — section 2---------------------------->
       <section class="benefits section">
         <div class="container">
           <h2 class="visually-hidden">Our benefits</h2>
@@ -76,7 +82,7 @@
             <li class="benefits-item">
               <div class="benefits-item__icon">
                 <svg width="64" height="64">
-                  <use href="./images/sprite.svg#icon-antenna"></use>
+                  <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
               <h3 class="benefits-title">Strategy</h3>
@@ -88,7 +94,7 @@
             <li class="benefits-item">
               <div class="benefits-item__icon">
                 <svg width="64" height="64">
-                  <use href="./images/sprite.svg#icon-clock"></use>
+                  <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
 
@@ -101,7 +107,7 @@
             <li class="benefits-item">
               <div class="benefits-item__icon">
                 <svg width="64" height="64">
-                  <use href="./images/sprite.svg#icon-diagram"></use>
+                  <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
 
@@ -114,7 +120,7 @@
             <li class="benefits-item">
               <div class="benefits-item__icon">
                 <svg width="64" height="64">
-                  <use href="./images/sprite.svg#icon-astronaut"></use>
+                  <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
 
@@ -127,7 +133,7 @@
           </ul>
         </div>
       </section>
-      <!---------------------------- What are we doing -3----------------------------->
+      <!---------------------- What are we doing — section 3-------------------->
       <section class="work section">
         <div class="container">
           <h2 class="work-title">What are we doing</h2>
@@ -159,7 +165,7 @@
           </ul>
         </div>
       </section>
-      <!------------------------- Our Team 4------------------------->
+      <!------------------------- Our Team — section 4------------------------->
       <section class="team section">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -179,22 +185,22 @@
                 <ul class="list">
                   <li>
                     <svg class="team-item__icon" width="16" height="16">
-                      <use href="./images/sprite.svg#icon-instagram"></use>
+                      <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
                   </li>
                   <li>
                     <svg class="team-item__icon" width="16" height="16">
-                      <use href="./images/sprite.svg#icon-twitter"></use>
+                      <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </li>
                   <li>
                     <svg class="team-item__icon" width="16" height="16">
-                      <use href="./images/sprite.svg#icon-facebook"></use>
+                      <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </li>
                   <li>
                     <svg class="team-item__icon" width="16" height="16">
-                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                      <use href="./images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </li>
                 </ul>
@@ -239,7 +245,71 @@
           </ul>
         </div>
       </section>
+      <!-- — section 5 -->
+      <section class="customers-section">
+        <div class="container">
+          <h2 class="customers-title">Customers</h2>
+          <ul class="customers-list list">
+            <li class="customers-list__item">
+              <a class="customers-list__link">
+                <svg class="customers-list__icon" width="104" height="56">
+                  <use href="./images/icons.svg#icon-ya_co-customers"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="customers-list__item">
+              <a class="customers-list__link">
+                <svg class="customers-list__icon" width="104" height="56">
+                  <use
+                    href="./images/icons.svg#icon-company_tag_line_here-customers"
+                    compa
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="customers-list__item">
+              <a class="customers-list__link">
+                <svg class="customers-list__icon" width="104" height="56">
+                  <use href="./images/icons.svg#icon-company-customers"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="customers-list__item">
+              <a class="customers-list__link">
+                <svg class="customers-list__icon" width="104" height="56">
+                  <use
+                    href="./images/icons.svg#icon-foster_peters-customers"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="customers-list__item">
+              <a class="customers-list__link">
+                <svg class="customers-list__icon" width="104" height="56">
+                  <use href="./images/icons.svg#icon-brand-customers"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="customers-list__item">
+              <a class="customers-list__link">
+                <svg class="customers-list__icon" width="104" height="56">
+                  <use
+                    href="./images/icons.svg#icon-company_tag_line-customers"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--end — section 5 -->
     </main>
+
     <!---------------------- Footer --------------------------------->
     <footer class="footer">
       <div class="container">
