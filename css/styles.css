@@ -337,12 +337,12 @@ img {
     height: 56px;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: var(--color-ocean);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----end  hero__section 1 ------ */
@@ -503,7 +503,18 @@ img {
     height: 88px;
 }
 
-.customers-list__link {
+
+
+
+
+
+.customers-list__item a:hover,
+.customers-list__item a:focus {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-list__item a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -512,16 +523,15 @@ img {
     color: var(--color-light-slate);
     border: 1px solid var(--color-light-slate);
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-list__link:hover,
-.customers-list__link:hover {
-    border-color: var(--color-ocean);
-    color: var(--color-ocean);
-}
-
+/*  */
+/* .customers-list__link:hover, */
+/* .customers-list__link:hover { */
+/* border-color: var(--color-ocean); */
+/* color: var(--color-ocean); */
+/* } */
+/*  */
 .customers-list__icon {
     color: currentColor;
 }
